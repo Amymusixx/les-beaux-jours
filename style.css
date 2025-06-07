@@ -1,0 +1,237 @@
+/*
+Theme Name: Les Beaux Jours
+Theme URI: https://www.les-beaux-jours.fr/
+Author: AmyXdesign
+Description: Thème pour le site web de l'entreprise de design et d'innovations sociales Les Beaux Jours. 
+Version: 1.0
+Tags: web design, design, social, service
+Text Domain: les-beaux-jours
+Template : Twenty Twenty-Four
+
+/*
+
+1. Installation en local des polices et configuration CSS
+2. Bannière de cookies complianz
+3. Bouton back to top
+
+
+
+
+ 1. ------------------------ Installation en local des polices et code CSS correspondant ---------------------- */ 
+  @font-face{
+    font-family: 'PoppinsBlack';
+    src: url('assets/fonts/Poppins-Black.woff2') format("woff2");
+  }
+
+   @font-face{
+    font-family: 'PoppinsBold';
+    src: url('assets/fonts/Poppins-Bold.woff2') format("woff2");
+  }
+
+  @font-face{
+    font-family: 'PoppinsExtraBold';
+    src: url('assets/fonts/Poppins-ExtraBold.woff2') format("woff2");
+  }
+
+  @font-face{
+    font-family: 'PoppinsSemiBold';
+    src: url('assets/fonts/Poppins-SemiBold.woff2') format("woff2");
+  }
+
+  @font-face{
+    font-family: 'PoppinsMedium';
+    src: url('assets/fonts/Poppins-Medium.woff2') format("woff2");
+  }
+
+    @font-face{
+    font-family: 'PoppinsMediumItalic';
+    src: url('assets/fonts/Poppins-MediumItalic.woff2') format("woff2");
+  }
+
+    @font-face{
+    font-family: 'PoppinsItalic';
+    src: url('assets/fonts/Poppins-Italic.woff2') format("woff2");
+  }
+
+    @font-face{
+    font-family: 'PoppinsLight';
+    src: url('assets/fonts/Poppins-Light.woff2') format("woff2");
+  }
+
+      @font-face{
+    font-family: 'PoppinsLightItalic';
+    src: url('assets/fonts/Poppins-LightItalic.woff2') format("woff2");
+  }
+
+    @font-face{
+    font-family: 'PoppinsExtraLight';
+    src: url('assets/fonts/Poppins-ExtraLight.woff2') format("woff2");
+  }
+
+    @font-face{
+    font-family: 'PoppinsExtraLightItalic';
+    src: url('assets/fonts/Poppins-ExtraLightItalic.woff2') format("woff2");
+  }
+
+      @font-face{
+    font-family: 'PoppinsThin';
+    src: url('assets/fonts/Poppins-Thin.woff2') format("woff2");
+  }
+
+    @font-face{
+    font-family: 'PoppinsThinItalic';
+    src: url('assets/fonts/Poppins-ThinItalic.woff2') format("woff2");
+  }
+
+
+  @font-face{
+    font-family: 'Bookman';
+    src: url('assets/fonts/bookmanoldstyle.woff2') format("woff2");
+  }
+
+    @font-face{
+    font-family: 'BookmanItalic';
+    src: url('assets/fonts/bookmanoldstyle_italic.woff2') format("woff2");
+  }
+
+
+a {
+    color: var(--noir);
+}
+
+body{
+    margin:0px;
+}
+
+
+h1{
+    font-family:'PoppinsBlack';
+}
+
+h2{
+    font-family:'PoppinsBlack';
+}
+
+h3{
+font-family:'PoppinsBlack';
+}
+
+h4{
+    font-family:'PoppinsMedium';
+}
+
+h5{
+    font-family:'PoppinsLight'
+}
+
+h6{
+    font-family:'PoppinsLightItalic'
+}
+
+p{
+    font-family:'PoppinsMedium';
+    line-height:1.2;
+    color:var(--noir);
+}
+
+ul, li{
+  line-height:1.2;
+}
+
+.baseline{
+    font-family:'BookmanItalic';
+    letter-spacing: -25px;
+}
+
+
+:root {
+--orange: #FF8446;
+--jaune: #FBE46A;
+--noir: #1F1E36;
+--vert: #00B177;
+--bleu: #55C2E0;
+--violet: #B781DB;
+--blanc: #F4EEE8;
+}
+
+
+
+
+/* 2. ---------------- bannière de cookies complianz -------------------------- */
+
+#cmplz-cookiebanner-container .cmplz-cookiebanner{
+    font-family:'AlbertSansExtraLight' !important;
+}
+
+#cmplz-manage-consent .cmplz-manage-consent{
+right:100px !important;
+height:40px !important;
+}
+
+@media screen and (max-width:768px){
+#cmplz-manage-consent .cmplz-manage-consent{
+    right:0px !important;
+}
+
+#cmplz-cookiebanner-container .cmplz-cookiebanner{
+    border-radius:0;
+}
+}
+
+
+/* 3. ------------------------------- Bouton back to top -------------------------------- */
+button.back-to-top{
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #E9E5E0;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    border: none;
+    right: 50px;
+    bottom: 75px;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all .3s ease-in-out;
+  }
+  button.back-to-top:hover,
+  button.back-to-top:active,
+  button.back-to-top:focus{
+    outline: 0 !important;
+  }
+
+  button.back-to-top.show {
+    display: block;
+    background: #E9E5E0;
+    color: #00ab6c;
+    font-size: 25px;
+    right: 25px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    visibility: visible;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  }
+  button.back-to-top.show:active {
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  }
+
+.back-to-top svg{
+    width: 60%;
+    position:relative;
+    top:2px;
+  }
